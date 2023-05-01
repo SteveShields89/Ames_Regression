@@ -31,13 +31,8 @@
     Sale Dist.png
 
 ## Feature engineering and Model Selection:
-    As previously stated, the Ames data set is extensive. After clearing the data of null values, I was finally able to visualize the data and begin to engineer some features. Below you can see a few visuals that I used to help me with my engineering. Most of the engineering completed were changing all of the ordinal values in to numbers. For insance, there was a column for garage quality that was rated from 'Poor' to 'Excellent'. I ended up plcaing them on a scale from 0 to 5. All ordinal features were changed to the same type of scale. 
-    
-    Next I delved into visualizing any outliers from the highest correlated features. I did not find many outliers and the ones that I did find were dropped, namely those in the 'Sale Price' feature. This helped out when it came to establishing a baseline for model selection. Speaking of baseline, I took the mean of the cleaned 'Sale Price' column which was $178,182.59.
-
-    I tried 4 different models for my prediction but only 3 of them worked well against unseen data. Of the last 3 models, the final model was found to be the best. I used a combination of LassoCV and Standard Scaler. The mean of the predicted values was ~ $178,546.61 with an RMSE of $22,885.58  
-
-    ModelLas.png
+    As previously stated, the Ames data set is extensive. After clearing the data of null values, I was finally able to visualize the data and begin to engineer some features. Below you can see a few visuals that I used to help me with my engineering. After, cleaning I One Hot Encoded all categorical variables for modeling.
+  
 
 ## Conclusion/Next Steps:
     In order to move forward with our final model, we will need to test the model on more unseen data, specifically related to the housing market here in Atlanta. This definitely a great starting point so we are hoping to get more investments to put more resources in to a production model that we will use to price our houses.    
